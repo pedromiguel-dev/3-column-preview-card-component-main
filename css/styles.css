@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --laranjaCintilante: hsl(31, 77%, 52%);
+  --cianoEcuro: hsl(184, 100%, 22%);
+  --cianoMuitoEsuro: hsl(179, 100%, 13%);
+  --brancoTransparente: hsla(0, 0%, 100%, 0.75);
+  --cinzaBemClaro: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 0.9375rem;
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  min-width: 270px;
+  height: auto;
+  border-radius: 8px;
+  margin: 90px 0;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.card {
+  position: relative;
+  padding: 2.5rem 2.5rem;
+  width: 16.875rem;
+  height: 25rem;
+  color: var(--brancoTransparente);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 1fr 1fr 2fr 0.5fr;
+      grid-template-rows: 1fr 1fr 2fr 0.5fr;
+}
+
+.card img {
+  width: 4rem;
+  height: 2.5rem;
+}
+
+.card a {
+  color: var(--brancoTransparente);
+  text-decoration: none;
+}
+
+.card .titulo {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  color: white;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.card .paragrafo {
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.7;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.card .butao {
+  background: #fff;
+  color: black;
+  mix-blend-mode: screen;
+  padding: 0.81rem 1.87rem;
+  border-radius: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: white solid 0.15rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.95rem;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.card .butao:hover {
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  background: transparent;
+  color: white;
+}
+
+.card1 {
+  background-color: var(--laranjaCintilante);
+}
+
+.card2 {
+  background-color: var(--cianoEcuro);
+}
+
+.card3 {
+  background-color: var(--cianoMuitoEsuro);
+}
+
+@media (min-width: 51rem) {
+  .container {
+    grid-auto-flow: column;
+  }
+  .card {
+    height: 26.87rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
